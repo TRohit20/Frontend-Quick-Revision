@@ -149,14 +149,28 @@ input[type=text] {
     text-transform: lowercase;
     position: relative;
 }
+h2 span::before{
+    content: '';
+    position: absolute;
+    width: 3em;
+    background-color: red;
+    height: .4rem;
+    bottom: 0;
+    z-index: -1;
+    /* margin-left: -.5em; */
+    margin-bottom: .2em ;
+}
+
 .prac {
     text-transform: uppercase;
-    color: red;
+    color: black;
+    font-weight: bold;
 }
 
 .grind {
     text-transform: uppercase;
     color: blue;
+    font-weight: bold;
 }
 
 img {
@@ -225,5 +239,38 @@ img {
         margin-top: 2.2em;
         padding: .7em 0;
         width: 30%;
+    }
+
+    .practise {
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        grid-template-areas: "Frontend Image";
+    }
+    .right-column {
+        grid-area: Image;
+        padding: 0 10%;
+        text-align: left;
+        align-self: center;
+    }
+    img{
+        grid-area: Frontend;
+    }
+    h2{
+        margin: 0;
+    }
+}
+
+.top{
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIN {
+    from {
+        opacity: 0;
+        transform: translateY(-2em);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
     }
 }
