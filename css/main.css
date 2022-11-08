@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Poppins:wght@400;600;700&display=swap');
+
+body{
+    font-family: 'Nunito', sans-serif;
+/* font-family: 'Poppins', sans-serif; */
+    margin: 10px;
+}
+
+.background {
+    background-color: #307d99;
+    background: url('../images/bg.png');
+    color: white; 
+    text-align: center; 
+    padding-bottom: 4rem;
+}
+
+header{
+    padding: 1em 5em 3em 10em;
+}
+
+.background a {
+    color: orange;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.navbar a{
+    display: inline-block;
+    color: white;
+}
+.navbar a:hover{
+    color: aqua;
+    text-decoration: underline;
+}
+
+section {
+    margin: 0 1em;
+}
+
+h1{
+    font-size: 2.5rem;
+    margin: 2em 0 1.2em ;
+}
+h1 span{
+    text-transform: uppercase;
+    display: block;
+    position: relative;
+    font-size: 4.5rem; 
+    z-index: 1;
+}
+
+h1 span::before{
+    content: '';
+    position: absolute;
+    width: 3em;
+    background-color: #00bfff;
+    height: .4rem;
+    bottom: 0;
+    z-index: -1;
+    /* margin-left: -.5em; */
+    margin-bottom: .2em ;
+}
+
+.para1 {
+    /* color: black; */
+    font-weight: bold;
+    margin: 0 1em 3em;
+}
+
+.form-container {
+    background-color: white;
+    margin: 2em -1em 0;
+    padding: 2em;
+}
+
+.label {
+    color: #2d7d98;
+    font-weight: bold; 
+    display: block;
+    margin: 1em;
+    font-size: 1.2em;
+}
+
+input[type=text] {
+    margin-bottom: .5em;
+    width: 30%;
+    border: 1px solid grey;
+    padding: .5em;
+    border-radius: 3em;
+    margin-top: .7em;
+}
+
+input[type=button]{
+    background-color: #e3890a;
+    border: none;
+    border-radius: 2em;
+    border-top: .2em;
+    width: 10%;
+    color: white;
+}
